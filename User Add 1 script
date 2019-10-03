@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in $(cat /home/tecxtfiles/UserNameLvl1.txt)
+for i in $(cat /home/textfiles/UserNameLvl1.txt)
 do
   echo $i
   useradd -m -s /bin/bash -- "$i"
