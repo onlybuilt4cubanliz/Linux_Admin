@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Name of group to create"
+read groupname
+sudo groupadd ${groupname}
+sudo mkdir ./Users/${groupname}
+sudo mkdir ./Users/${groupname}/Policy
+sudo chmod 744 ./Users/${groupname}/Poicy
+echo "Group ${groupname} has been added"
