@@ -1,0 +1,10 @@
+#!/bin/bash 
+
+#Replace "userA" with an actual users name 
+for user in "userA","userB","userC";
+do
+#Replace "Admin" with whatever group you want 
+  sudo usermod -a -G "Admin" "$user";       
+ done
+  
+ 
