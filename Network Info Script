@@ -1,0 +1,16 @@
+You will need to install netstat or network tools and ifconfig.
+
+#!/bin/bash
+
+set 'date'
+
+echo "IP Address:"
+ip addr show
+
+echo "Open Ports:"
+netstat -a
+
+echo "DNS Server:"
+cat /etc/resolv.conf
+
+echo "File has been created"
