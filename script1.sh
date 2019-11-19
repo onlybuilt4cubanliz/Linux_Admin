@@ -4,7 +4,7 @@
 curr_m=`date | cut -d " " -f2`
 curr_d=`date | cut -d " " -f3`
 
-###LAst log command to find history one day ago############
+###Last log command to find history one day ago############
 ###The below command will search for all login attempts between midnight and 6AM#####
 lastlog -t1| grep -E "$curr_m ([ 0-9])([0-9]) (0[0-5]):([0-9])([0-9])" > $curr_d-$curr_m.log
 
