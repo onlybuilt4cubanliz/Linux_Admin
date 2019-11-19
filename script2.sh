@@ -14,7 +14,7 @@ else
 	#diff -r /etc etc
 fi 
 
-####FIND all the softlinks in etc dir#######
+####Find all the softlinks in etc dir#######
 find -L etc -xtype l > soft.tmp
 
 ###Loop over links to find all details####
