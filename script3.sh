@@ -11,7 +11,7 @@ find / -name ".*" -exec ls -lhrt  {} \; > hiddenfiles
 find /usr/bin -type f -exec ls -lhrt  {} \; > excutablefiles
 find /usr/sbin -type f -exec ls -lhrt {} \; >> excutablefiles
 
-#####removing unwanted liines#######
+#####removing unwanted lines#######
 sed -i '/total/d' hiddenfiles
 sed -i '/total/d' "hiddenfiles-1"
 
